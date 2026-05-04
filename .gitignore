@@ -1,0 +1,10 @@
+venv/
+.venv/
+chroma_db/
+.env
+.aws/
+.cache/
+reports/eval_report.json
+__pycache__/
+*.pyc
+*.log

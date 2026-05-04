@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is Amazon Bedrock?",
+    "ground_truth": "Amazon Bedrock is a fully managed service that provides secure, enterprise-grade access to high-performing foundation models from leading AI companies through a unified API."
+  },
+  {
+    "question": "Which foundation model providers are available on Amazon Bedrock?",
+    "ground_truth": "Amazon Bedrock provides access to foundation models from providers such as AI21 Labs, Amazon, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and other supported model providers."
+  },
+  {
+    "question": "Does Amazon Bedrock support streaming responses?",
+    "ground_truth": "Yes. Amazon Bedrock supports streaming inference through the InvokeModelWithResponseStream API and streaming operations exposed by supported models."
+  },
+  {
+    "question": "How do you invoke a model on Amazon Bedrock?",
+    "ground_truth": "You invoke a model on Amazon Bedrock by calling InvokeModel or InvokeModelWithResponseStream with a model ID and a request body containing the prompt, messages, or inference parameters required by that model."
+  },
+  {
+    "question": "What inference parameters can be configured when calling a Bedrock model?",
+    "ground_truth": "Inference parameters vary by model, but commonly include values such as maximum output length, temperature, top_p, top_k, stop sequences, and other model-specific request fields."
+  },
+  {
+    "question": "What are Amazon Bedrock Knowledge Bases used for?",
+    "ground_truth": "Amazon Bedrock Knowledge Bases are used to implement Retrieval Augmented Generation by connecting foundation models to private or domain-specific data sources so responses can use retrieved context."
+  },
+  {
+    "question": "What are Amazon Bedrock Agents?",
+    "ground_truth": "Amazon Bedrock Agents help build applications that can break down user requests, orchestrate foundation models, connect to data sources, and invoke APIs or tools to complete multi-step tasks."
+  },
+  {
+    "question": "What is the purpose of Guardrails for Amazon Bedrock?",
+    "ground_truth": "Guardrails for Amazon Bedrock help implement safeguards for generative AI applications, including content filters, denied topics, sensitive information filters, contextual grounding checks, and application-specific safety policies."
+  },
+  {
+    "question": "Can you customize models on Amazon Bedrock?",
+    "ground_truth": "Yes. Amazon Bedrock supports model customization for supported models, including fine-tuning and continued pre-training workflows using your own training data."
+  },
+  {
+    "question": "Can Amazon Bedrock run batch inference?",
+    "ground_truth": "Yes. Amazon Bedrock supports batch inference for running asynchronous model inference jobs over larger datasets stored in Amazon S3."
+  },
+  {
+    "question": "Is Amazon Bedrock serverless?",
+    "ground_truth": "Yes. Amazon Bedrock is a fully managed service, so users do not need to provision or manage model infrastructure for standard Bedrock model access."
+  },
+  {
+    "question": "What AWS service is commonly used to store batch inference input and output data for Bedrock?",
+    "ground_truth": "Amazon S3 is commonly used to store input and output data for Amazon Bedrock batch inference jobs."
+  },
+  {
+    "question": "What is a model ID in Amazon Bedrock?",
+    "ground_truth": "A model ID identifies the foundation model or inference profile that a Bedrock request should use when invoking a model."
+  },
+  {
+    "question": "Can Bedrock Knowledge Bases retrieve context from external data for RAG?",
+    "ground_truth": "Yes. Bedrock Knowledge Bases retrieve relevant context from configured data sources and use that context to support Retrieval Augmented Generation."
+  },
+  {
+    "question": "What does contextual grounding in Guardrails help detect?",
+    "ground_truth": "Contextual grounding in Guardrails helps detect responses that are not grounded in the provided source context or are not relevant to the user's query."
+  },
+  {
+    "question": "Does Amazon Bedrock require JavaScript in the browser to call InvokeModel?",
+    "ground_truth": "No. InvokeModel is an Amazon Bedrock Runtime API operation and does not require browser JavaScript; JavaScript warnings on documentation pages only relate to viewing AWS documentation in a browser."
+  },
+  {
+    "question": "Does Bedrock support GPT-4o?",
+    "ground_truth": "No. GPT-4o is an OpenAI model and is not listed as a supported Amazon Bedrock foundation model in the ingested AWS Bedrock documentation."
+  },
+  {
+    "question": "Are Amazon Bedrock Agents the same thing as ChromaDB?",
+    "ground_truth": "No. Amazon Bedrock Agents orchestrate foundation models, APIs, and data sources for tasks, while ChromaDB is a vector database and is not the same service."
+  },
+  {
+    "question": "Can every Bedrock model use exactly the same request body format?",
+    "ground_truth": "No. Request and response formats vary by model provider and model, so applications must use the parameters and schema required by the selected model."
+  },
+  {
+    "question": "Does Amazon Bedrock automatically make private company data public?",
+    "ground_truth": "No. Amazon Bedrock is designed for secure enterprise use, and private data used with Bedrock is not automatically made public."
+  }
+]

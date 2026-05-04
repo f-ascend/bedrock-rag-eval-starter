@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Latest Ragas Scores</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #17202a; }
+    h1 { margin-bottom: 8px; }
+    .scores { display: grid; grid-template-columns: repeat(5, minmax(130px, 1fr)); gap: 12px; margin: 24px 0; }
+    .score { border: 1px solid #d8dee4; border-radius: 6px; padding: 12px; }
+    .score strong { display: block; font-size: 24px; margin-top: 6px; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th, td { border: 1px solid #d8dee4; padding: 8px; vertical-align: top; }
+    th { background: #f6f8fa; text-align: left; }
+  </style>
+</head>
+<body>
+  <h1>Latest Ragas Scores</h1>
+  <p>20-question hand-labeled AWS Bedrock RAG evaluation.</p>
+  <section class="scores">
+    <div class="score">faithfulness<strong>0.9762</strong></div><div class="score">answer_relevancy<strong>0.5706</strong></div><div class="score">context_precision<strong>0.6417</strong></div><div class="score">context_recall<strong>0.5333</strong></div><div class="score">answer_correctness<strong>0.5285</strong></div>
+  </section>
+  <h2>Question-Level Results</h2>
+  <table>
+    <thead><tr><th>Question</th><th>RAG answer excerpt</th><th>faithfulness</th><th>answer_relevancy</th><th>context_precision</th><th>context_recall</th><th>answer_correctness</th></tr></thead>
+    <tbody><tr><td>What is Amazon Bedrock?</td><td>Based on the provided context, **Amazon Bedrock** is a **fully managed service** that provides **secure, enterprise-grade access to high-performing foundation models** from leading AI companies, enabling you to **build a</td><td>1.0000</td><td>0.9326</td><td>1.0000</td><td>0.0000</td><td>0.7364</td></tr><tr><td>Which foundation model providers are available on Amazon Bedrock?</td><td>Based on the provided context, the following foundation model providers are available on Amazon Bedrock:
+
+1. **Amazon** (Nova models and Titan models)
+2. **Anthropic** (Claude models)
+3. **AI21 Labs**
+4. **Cohere**
+5. **</td><td>1.0000</td><td>0.9978</td><td>0.5000</td><td>1.0000</td><td>0.6632</td></tr><tr><td>Does Amazon Bedrock support streaming responses?</td><td>Yes, Amazon Bedrock supports streaming responses. This is indicated by the mention of the `InvokeModelWithResponseStream` API operation and the `ConverseStream` operation, as well as the `responseStreamingSupported` fiel</td><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>1.0000</td><td>0.5730</td></tr><tr><td>How do you invoke a model on Amazon Bedrock?</td><td>Based on the provided context, I don&#x27;t know the specific steps to invoke a model on Amazon Bedrock. The context only mentions that you should &quot;**Submit prompts and generate responses with model inference**&quot; operations pr</td><td>1.0000</td><td>0.0000</td><td>0.5000</td><td>0.0000</td><td>0.5360</td></tr><tr><td>What inference parameters can be configured when calling a Bedrock model?</td><td>Based on the provided context, I don&#x27;t know based on the provided context.
+
+The context only provides an **overview/introduction** about inference request parameters and response fields for foundation models in Amazon Be</td><td>0.6667</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.1576</td></tr><tr><td>What are Amazon Bedrock Knowledge Bases used for?</td><td>Based on the provided context, Amazon Bedrock Knowledge Bases are used to:
+
+1. **Improve AI responses** through Retrieval Augmented Generation (RAG), a technique that uses information from data sources to improve the **r</td><td>1.0000</td><td>1.0000</td><td>0.5000</td><td>1.0000</td><td>0.5925</td></tr><tr><td>What are Amazon Bedrock Agents?</td><td>Based on the provided context, Amazon Bedrock Agents is a capability that allows you to **build and configure autonomous agents** in your application. These agents help end-users complete actions based on organization da</td><td>1.0000</td><td>0.9005</td><td>0.5000</td><td>1.0000</td><td>0.7309</td></tr><tr><td>What is the purpose of Guardrails for Amazon Bedrock?</td><td>Based on the provided context, the purpose of Amazon Bedrock Guardrails is to provide **configurable safeguards** to help build safe generative AI applications. Specifically, it:
+
+- Offers **comprehensive safety and priv</td><td>1.0000</td><td>0.9644</td><td>0.8333</td><td>0.0000</td><td>0.6280</td></tr><tr><td>Can you customize models on Amazon Bedrock?</td><td>Yes, you can customize models on Amazon Bedrock. Model customization is the process of providing training data to a model in order to improve its performance for specific use cases. Amazon Bedrock allows you to customize</td><td>1.0000</td><td>0.9640</td><td>1.0000</td><td>0.0000</td><td>0.6609</td></tr><tr><td>Can Amazon Bedrock run batch inference?</td><td>Yes, Amazon Bedrock can run batch inference. Based on the provided context, Amazon Bedrock supports batch inference jobs, including the ability to:
+
+- **Create** a batch inference job
+- **Monitor** batch inference jobs
+-</td><td>1.0000</td><td>0.9436</td><td>1.0000</td><td>0.0000</td><td>0.5161</td></tr><tr><td>Is Amazon Bedrock serverless?</td><td>I don&#x27;t know based on the provided context.
+
+The provided context describes Amazon Bedrock as a &quot;fully managed service&quot; but does not specifically mention whether it is serverless or not.</td><td>1.0000</td><td>0.0000</td><td>1.0000</td><td>0.0000</td><td>0.3789</td></tr><tr><td>What AWS service is commonly used to store batch inference input and output data for Bedrock?</td><td>I don&#x27;t know based on the provided context.</td><td>1.0000</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>0.0185</td></tr><tr><td>What is a model ID in Amazon Bedrock?</td><td>Based on the provided context, a model ID in Amazon Bedrock is an identifier used **with the model invocation API operations**. The context mentions &quot;a table of models and their IDs to use with the model invocation API o</td><td>1.0000</td><td>0.0000</td><td>0.5000</td><td>0.0000</td><td>0.4269</td></tr><tr><td>Can Bedrock Knowledge Bases retrieve context from external data for RAG?</td><td>Yes, Amazon Bedrock Knowledge Bases can retrieve context from external data sources for RAG (Retrieval Augmented Generation). According to the context, when a query is made, **&quot;a knowledge base searches your data to find</td><td>1.0000</td><td>0.9057</td><td>1.0000</td><td>1.0000</td><td>0.6151</td></tr><tr><td>What does contextual grounding in Guardrails help detect?</td><td>Based on the provided context, contextual grounding checks in Guardrails help **detect hallucinations in model responses** that are either:
+- **Not grounded** (factually inaccurate or add new information) in the source, </td><td>1.0000</td><td>0.9395</td><td>0.3333</td><td>1.0000</td><td>0.8593</td></tr><tr><td>Does Amazon Bedrock require JavaScript in the browser to call InvokeModel?</td><td>Based on the provided context, the requirement for JavaScript mentioned is specifically for using the **Amazon Web Services Documentation** website, not for calling the InvokeModel API itself. The context states:
+
+&gt; &quot;Jav</td><td>1.0000</td><td>0.0000</td><td>1.0000</td><td>1.0000</td><td>0.5854</td></tr><tr><td>Does Bedrock support GPT-4o?</td><td>I don&#x27;t know based on the provided context.
+
+(The context mentions a model ID &quot;openai.gpt-oss-120b-1:0&quot; but does not provide any specific information about GPT-4o support in Amazon Bedrock.)</td><td>1.0000</td><td>0.0000</td><td>0.0000</td><td>1.0000</td><td>0.2239</td></tr><tr><td>Are Amazon Bedrock Agents the same thing as ChromaDB?</td><td>No, Amazon Bedrock Agents and ChromaDB are not the same thing. Based on the provided context, Amazon Bedrock Agents is a feature within Amazon Bedrock that allows you to **build and configure autonomous agents** that orc</td><td>0.8571</td><td>0.9929</td><td>0.3333</td><td>0.6667</td><td>0.5070</td></tr><tr><td>Can every Bedrock model use exactly the same request body format?</td><td>Based on the provided context, **no**, not every Bedrock model uses exactly the same request body format. The context states:
+
+&gt; &quot;When you make inference calls to models with the model invocation API operations, you incl</td><td>1.0000</td><td>0.8706</td><td>1.0000</td><td>1.0000</td><td>0.6020</td></tr><tr><td>Does Amazon Bedrock automatically make private company data public?</td><td>Based on the provided context, there is no information suggesting that Amazon Bedrock automatically makes private company data public. In fact, the context indicates the opposite — it describes Amazon Bedrock as providin</td><td>1.0000</td><td>0.0000</td><td>0.8333</td><td>1.0000</td><td>0.5574</td></tr></tbody>
+  </table>
+</body>
+</html>

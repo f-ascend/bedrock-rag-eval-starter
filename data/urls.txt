@@ -1,0 +1,12 @@
+https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/inference-invoke.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/inference-invoke-stream.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference.html
+https://docs.aws.amazon.com/bedrock/latest/userguide/security.html
