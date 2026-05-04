@@ -34,6 +34,8 @@ Ragas metrics used:
 ## Latest Scores
 
 The latest report is visible at `reports/latest.html` and the raw JSON is in `reports/eval_report.json`.
+After GitHub Pages is enabled, the report URL is:
+https://f-ascend.github.io/bedrock-rag-eval-starter/reports/latest.html
 
 ```json
 {
